@@ -6,8 +6,8 @@ const bot = new Telegraf(process.env.TELEGRAF_API_KEY);
 bot.start((ctx) => ctx.reply("Welcome to your personal chat bot \n\n\n Say 'Hi' to get started"));
 bot.on('sticker', (ctx) => ctx.reply('❤️'));
 bot.hears('Hi', (ctx) => {
-    ctx.reply('Hey there! What`s up? \nLooking for any of these?');
-    setTimeout(() => ctx.reply('1./Movie_recommendations \n2./Books \n3./Tourist_places'), 1000);
+    ctx.reply('Hey there! What`s up. \nLooking for any of these?');
+    setTimeout(() => ctx.reply('1./Movie_recommendations \n2./Books \n3./Tourist_places \n\n\n👆 Click To know More.'), 1000);
 });
 bot.hears('Hi', (ctx) => ctx.reply('Looking for any of these?'));
 bot.command('Movie_recommendations', (ctx) => {
